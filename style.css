@@ -1,13 +1,27 @@
 /* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
 
-/* 
+ 
 .option-one-screen, 
 .option-two-screen, 
+.option-one-middle,
+.option-two-middle,
+.option-one-middle2,
+.option-two-middle2,
 .option-one-end, 
-.option-two-end  {
+.option-two-end,
+.option-two-end2,
+.endless,
+.endless2,
+.end3,
+.end3-2,
+.no-end,
+.door1,
+.door2,
+.door3,
+.continue {
    display:none;
 }
-*/
+
 
 
 /* Feel free to change any of the styling below!*/
@@ -19,8 +33,8 @@ body {
 
 /* Style the body with a background color or image if desired */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #f8f7f8;
     text-align: center;
     padding: 20px;
 }
@@ -29,23 +43,23 @@ body {
 .title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Style the story opening container */
-.story-opening {
+/* .story-opening {
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Style the story image */
 .story-opening img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 /* Style the story opening message */
@@ -57,6 +71,9 @@ body {
 /* Style the buttons container */
 .buttons {
     margin: 20px;
+    display:inline-flex;
+    margin: auto;
+    
 }
 
 /* Style the option buttons */
@@ -64,20 +81,22 @@ button {
     font-size: 16px;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #691e68;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 28px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ad3479;
 }
 
 /* Style the screens for option one and option two */
-.option-one-screen,
+/* .option-one-screen,
 .option-two-screen,
 .option-one-end,
 .option-two-end {
@@ -87,7 +106,7 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
-}
+} */
 
 /* Style the images in the screens */
 .option-one-screen img,
@@ -96,7 +115,7 @@ button:hover {
 .option-two-end img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 /* Style the text in the screens */
@@ -105,5 +124,5 @@ button:hover {
 .option-one-end h1,
 .option-two-end h1 {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 39px;
 }
